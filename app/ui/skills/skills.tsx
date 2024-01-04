@@ -41,8 +41,8 @@ export default function Skills(props: ISkillsProps) {
           },
         }}
       >
-        {skills.map((skill) => (
-          <SwiperSlide>
+        {skills.map((skill, index) => (
+          <SwiperSlide key={index}>
             <Image
               src={skill}
               alt="skills-icons"
