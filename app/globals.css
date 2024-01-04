@@ -2,26 +2,105 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.slide-top {
+	-webkit-animation: slide-top 1500ms cubic-bezier(0.250, 0.460, 0.450, 0.940) 300ms both;
+	        animation: slide-top 1500ms cubic-bezier(0.250, 0.460, 0.450, 0.940) 300ms both;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+ @-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
   }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+  }
+
+.slide-right {
+	-webkit-animation: slide-right 2000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
+	        animation: slide-right 2000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@-webkit-keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(-400px);
+              transform: translateX(-400px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(-400px);
+              transform: translateX(-400px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+
+ 
+.slide-left {
+	-webkit-animation: slide-left 1800ms cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
+	        animation: slide-left 1800ms cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both;
 }
+
+ @-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(400px);
+              transform: translateX(400px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(400px);
+              transform: translateX(400px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+
+  .loader {
+    border: 5px solid #121212; /* Light grey */
+    border-top: 5px solid #7ae582; /* Blue */
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    animation: spin 2s linear infinite;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+  
+  
+  
+
