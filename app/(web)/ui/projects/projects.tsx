@@ -11,8 +11,8 @@ export default function Projects({ projects }: IProjectsProps) {
     <div className="h-full sm:h-[33rem] p-3 sm:p-5">
       <SectionTitle>Selected Projects</SectionTitle>
       <div className="flex flex-row justify-center flex-wrap items-center gap-3">
-        {projects.map((project: any) => (
-          <ProjectCard project={project} />
+        {projects.map((project: any, index: number) => (
+          <ProjectCard key={index} project={project} />
         ))}
       </div>
     </div>

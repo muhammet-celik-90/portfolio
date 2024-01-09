@@ -9,8 +9,8 @@ export default function ProjectCardBadges({
 }: IProjectCardBadgesProps) {
   return (
     <div className="flex flex-row flex-wrap gap-1 h-16 ">
-      {keywords?.map((keyword) => (
-        <div className="badge badge-ghost badge-outline">{keyword}</div>
+      {keywords?.map((keyword,index) => (
+        <div key={index} className="badge badge-ghost badge-outline">{keyword}</div>
       ))}
     </div>
   );
