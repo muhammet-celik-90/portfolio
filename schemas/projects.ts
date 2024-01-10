@@ -24,5 +24,11 @@ export default {
       title: "Image",
       type: "image",
     },
+    {
+      name: "isselected",
+      title: "Is Selected",
+      type: "boolean",
+      initialValue: false
+    },
   ],
 };

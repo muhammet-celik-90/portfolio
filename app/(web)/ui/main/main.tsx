@@ -8,10 +8,10 @@ import About from "../about/about";
 import Projects from "../projects/projects";
 
 export interface IMainProps {
-  projects: any;
+  selectedProjects: any;
 }
 
-export default function Main({projects}: IMainProps) {
+export default function Main({selectedProjects}: IMainProps) {
   return (
     <div className="sm:h-screen h-full">
       {/* <Navbar /> */}
@@ -22,7 +22,7 @@ export default function Main({projects}: IMainProps) {
       </div>
       <Skills />
       <About/>
-      <Projects projects={projects}/>
+      <Projects selectedProjects={selectedProjects}/>
     </div>
   );
 }
