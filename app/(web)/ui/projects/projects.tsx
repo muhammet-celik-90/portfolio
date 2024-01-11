@@ -9,7 +9,7 @@ export interface IProjectsProps {
 
 export default function Projects({ selectedProjects }: IProjectsProps) {
   return (
-    <div className="h-full sm:h-[33rem] p-3 sm:p-5">
+    <div className="h-full sm:h-[35rem] p-3 sm:p-5">
       <SectionTitle>Selected Projects</SectionTitle>
       <div className="flex flex-row justify-center flex-wrap items-center gap-3">
         {selectedProjects.map((project: any, index: number) => (

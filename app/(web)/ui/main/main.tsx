@@ -6,6 +6,7 @@ import MainCV from "./cv/mainCV";
 import Skills from "../skills/skills";
 import About from "../about/about";
 import Projects from "../projects/projects";
+import CertificatesMain from "../certificates/certificatesMain";
 
 export interface IMainProps {
   selectedProjects: any;
@@ -23,6 +24,7 @@ export default function Main({selectedProjects}: IMainProps) {
       <Skills />
       <About/>
       <Projects selectedProjects={selectedProjects}/>
+      <CertificatesMain/>
     </div>
   );
 }
