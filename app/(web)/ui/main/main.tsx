@@ -1,5 +1,4 @@
 import * as React from "react";
-import Navbar from "../navbar/navbar";
 import MainAvatar from "./mainAvatar";
 import MainText from "./text/mainText";
 import MainCV from "./cv/mainCV";
@@ -16,7 +15,6 @@ export interface IMainProps {
 export default function Main({selectedProjects}: IMainProps) {
   return (
     <div className="sm:h-screen h-full">
-      {/* <Navbar /> */}
       <div className="pt-20 sm:pt-0 flex flex-col sm:flex-row justify-start sm:justify-around items-center h-full py-5 px-2">
         <MainText />
         <MainAvatar />
@@ -24,7 +22,7 @@ export default function Main({selectedProjects}: IMainProps) {
       </div>
       <Skills />
       <About/>
-      <Projects selectedProjects={selectedProjects}/>
+      <Projects selectedProjects={selectedProjects} />
       <CertificatesMain/>
       <Footer/>
     </div>
