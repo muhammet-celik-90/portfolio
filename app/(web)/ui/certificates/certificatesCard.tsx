@@ -1,4 +1,6 @@
 import * as React from "react";
+import CertificatesCardButton from "./certificatesCardButton";
+import CertificatesCardText from "./certificatesCardText";
 
 export interface ICertificatesCardProps {
   certificate: {
@@ -24,15 +26,8 @@ export default function CertificatesCard({
     >
       <div className="bg-neutral-900 opacity-30 h-full"></div>
       <div className="relative z-[9] -top-2/3 left-2 h-40 flex flex-col justify-around items-start">
-        <div className="glass max-w-48 w-48 my-3 rounded-xl p-2">
-          <h2 className="card-title text-black text-3xl font-bold">
-            {certificate.label}
-          </h2>
-          <p className="text-black font-semibold">{certificate.description}</p>
-        </div>
-        <a href={certificate.href} target="_blank" className="btn min-w-20">
-          See
-        </a>
+        <CertificatesCardText label={certificate.label} description={certificate.description}/>
+        <CertificatesCardButton href={certificate.href}/>
       </div>
     </div>
   );
