@@ -7,6 +7,7 @@ import Skills from "../skills/skills";
 import About from "../about/about";
 import Projects from "../projects/projects";
 import CertificatesMain from "../certificates/certificatesMain";
+import Footer from "../footer/footer";
 
 export interface IMainProps {
   selectedProjects: any;
@@ -25,6 +26,7 @@ export default function Main({selectedProjects}: IMainProps) {
       <About/>
       <Projects selectedProjects={selectedProjects}/>
       <CertificatesMain/>
+      <Footer/>
     </div>
   );
 }

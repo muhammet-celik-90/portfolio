@@ -7,9 +7,9 @@ export interface ICertificatesMainProps {}
 
 export default function CertificatesMain(props: ICertificatesMainProps) {
   return (
-    <div className="h-[35rem] bg-neutral-800 p-5">
+    <div className="sm:h-[35rem] h-full bg-neutral-900 p-5">
       <SectionTitle>My Certificates</SectionTitle>
-      <div className="h-[27rem] flex flex-row flex-wrap gap-3 items-center justify-center">
+      <div className="sm:h-[27rem] h-full flex flex-row flex-wrap gap-3 items-center justify-center">
         {certificates.map((certificate, index) => (
           <CertificatesCard key={index} certificate={certificate} />
         ))}
