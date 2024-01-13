@@ -2,6 +2,7 @@ import * as React from "react";
 import ProjectsMainUI from "../../ui/pages/projects/projectsMainUI";
 import getProjects from "../../lib/data/getProjects";
 import { Metadata } from "next/types";
+import Footer from "../../ui/footer/footer";
 
 export interface IProjectsProps {}
 
@@ -24,6 +25,7 @@ export default async function Projects(props: IProjectsProps) {
   return (
     <div className="pt-16">
       <ProjectsMainUI projects={projects} />
+      <Footer/>
     </div>
   );
 }

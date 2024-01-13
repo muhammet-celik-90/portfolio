@@ -1,6 +1,7 @@
 import * as React from "react";
 import AboutMain from "@/app/(web)/ui/pages/about/aboutMain";
 import { Metadata } from "next/types";
+import Footer from "../../ui/footer/footer";
 
 export interface IAboutProps {}
 
@@ -21,6 +22,7 @@ export default function About(props: IAboutProps) {
   return (
     <div className="pt-16 sm:pt-0">
       <AboutMain />
+      <Footer/>
     </div>
   );
 }

@@ -1,10 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter, Montserrat } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import './globals.css'
 import Navbar from './ui/navbar/navbar'
 import { sharedMetadata } from './lib/metadata/sharedMetadata'
 
-const inter = Inter({ subsets: ['latin'] })
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {

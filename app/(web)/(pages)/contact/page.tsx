@@ -1,6 +1,7 @@
 import * as React from 'react';
 import type { Metadata } from 'next';
 import ContactMainUI from '../../ui/pages/contact/contactMainUI';
+import Footer from '../../ui/footer/footer';
 
 export interface IContactProps {
 }
@@ -21,6 +22,7 @@ export default function Contact (props: IContactProps) {
   return (
     <div className="pt-16">
      <ContactMainUI/>
+     <Footer/>
     </div>
   );
 }
