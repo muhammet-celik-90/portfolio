@@ -1,6 +1,8 @@
 import * as React from "react";
 import CertificatesCardButton from "./certificatesCardButton";
-import CertificatesCardText from "./certificatesCardText";
+import CertificatesCardAvatar from "./certificatesCardAvatar";
+import CertificatesTitle from "./certificatesTitle";
+import CertificatesText from "./certificatesText";
 
 export interface ICertificatesCardProps {
   certificate: {
@@ -15,18 +17,11 @@ export default function CertificatesCard({
   certificate,
 }: ICertificatesCardProps) {
   return (
-    <div
-      className="w-96 h-72 bg-primary rounded-xl"
-      style={{
-        backgroundImage: `url("${certificate.image}")`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "auto 350px",
-        backgroundPosition: "center center",
-      }}
-    >
-      <div className="bg-neutral-900 opacity-30 h-full"></div>
-      <div className="relative z-[9] -top-2/3 left-2 h-40 flex flex-col justify-around items-start">
-        <CertificatesCardText label={certificate.label} description={certificate.description}/>
+    <div className="card w-96 bg-neutral-800 p-3 flex flex-row gap-3">
+      <CertificatesCardAvatar image={certificate.image}/>
+      <div className="flex flex-col justify-center">
+        <CertificatesTitle>{certificate.label}</CertificatesTitle>
+        <CertificatesText>{certificate.description}</CertificatesText>
         <CertificatesCardButton href={certificate.href}/>
       </div>
     </div>

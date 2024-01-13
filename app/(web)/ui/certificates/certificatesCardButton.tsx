@@ -8,7 +8,7 @@ export default function CertificatesCardButton(
   {href}: ICertificatesCardButtonProps
 ) {
   return (
-    <a href={href} target="_blank" className="btn min-w-20">
+    <a href={href} target="_blank" className="btn-link text-base-content text-start ">
       See
     </a>
   );

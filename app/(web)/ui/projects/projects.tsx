@@ -14,9 +14,9 @@ export interface IProjectsProps {
 export default function Projects({ selectedProjects }: IProjectsProps) {
   const scroll = useScrollPosition();
   return (
-    <div className="h-full sm:h-[35rem] p-3 sm:p-5">
+    <div className="h-full p-3">
       <SectionTitle>Selected Projects</SectionTitle>
-      <div className="flex flex-row justify-center flex-wrap items-center gap-3">
+      <div className="flex flex-row justify-center flex-wrap items-center gap-3 h-full">
         {selectedProjects.map((project: any, index: number) => (
           <ProjectCard project={project} key={index} />
         ))}

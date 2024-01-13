@@ -17,4 +17,10 @@ export const certificates = [
         image: '/certificates/images/meb.webp',
         href: '/certificates/pdfs/meb.pdf'
     },
+    {
+        label: 'Meta',
+        description: 'Version Control',
+        image: '/certificates/images/meta.webp',
+        href: '/certificates/pdfs/version-control.pdf'
+    },
 ]
