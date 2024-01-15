@@ -24,7 +24,6 @@ export default function Main({selectedProjects}: IMainProps) {
       <About/>
       <Projects selectedProjects={selectedProjects} />
       <CertificatesMain/>
-      <Footer/>
     </div>
   );
 }

@@ -22,7 +22,6 @@ export default function Contact (props: IContactProps) {
   return (
     <div className="pt-16">
      <ContactMainUI/>
-     <Footer/>
     </div>
   );
 }

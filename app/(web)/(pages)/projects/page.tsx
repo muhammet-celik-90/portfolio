@@ -25,7 +25,6 @@ export default async function Projects(props: IProjectsProps) {
   return (
     <div className="pt-16">
       <ProjectsMainUI projects={projects} />
-      <Footer/>
     </div>
   );
 }

@@ -18,7 +18,7 @@ export default function CertificatesCard({
 }: ICertificatesCardProps) {
   return (
     <div className="card w-96 bg-neutral-800 p-3 flex flex-row gap-3">
-      <CertificatesCardAvatar image={certificate.image}/>
+      <CertificatesCardAvatar image={certificate.image} label={certificate.label}/>
       <div className="flex flex-col justify-center">
         <CertificatesTitle>{certificate.label}</CertificatesTitle>
         <CertificatesText>{certificate.description}</CertificatesText>

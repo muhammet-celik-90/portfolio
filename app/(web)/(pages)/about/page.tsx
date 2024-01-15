@@ -22,7 +22,6 @@ export default function About(props: IAboutProps) {
   return (
     <div className="pt-16 sm:pt-0">
       <AboutMain />
-      <Footer/>
     </div>
   );
 }
