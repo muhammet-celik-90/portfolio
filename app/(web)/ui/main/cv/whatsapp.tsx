@@ -9,7 +9,7 @@ export default function WAButton(props: IWAButtonProps) {
   return (
     <div className="flex flex-row items-center gap-2 btn btn-neutral">
       <FaWhatsapp style={{ fontSize: "1.5rem" }} />
-      <a href={`https://wa.me/${wa}`} target="_blank">Whatsapp</a>
+      <a href={`https://wa.me/${wa}`} target="_blank"  rel="nofollow">Whatsapp</a>
     </div>
   );
 }

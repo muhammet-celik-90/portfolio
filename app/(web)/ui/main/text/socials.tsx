@@ -11,13 +11,13 @@ export default function Socials(props: ISocialsProps) {
   const buttonStyle = "btn btn-circle btn-outline hover:bg-primary"
   return (
     <div className="flex flex-row gap-2 justify-center sm:justify-start">
-      <a href={personalInformation.linkedin} target="_blank" className={buttonStyle}>
+      <a href={personalInformation.linkedin} target="_blank"  rel="nofollow" className={buttonStyle}>
         <FaLinkedinIn style={iconStyle} />
       </a>
-      <a href={personalInformation.github} target="_blank" className={buttonStyle}>
+      <a href={personalInformation.github} target="_blank"  rel="nofollow" className={buttonStyle}>
         <FaGithub style={iconStyle} />
       </a>
-      <a href={personalInformation.instagram} target="_blank" className={buttonStyle}>
+      <a href={personalInformation.instagram} target="_blank"  rel="nofollow" className={buttonStyle}>
         <FaInstagram style={iconStyle} />
       </a>
     </div>

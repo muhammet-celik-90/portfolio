@@ -24,7 +24,7 @@ export default function NavMobileMenu(props: INavMobileMenuProps) {
       >
         {navlinks.map((navlink) => (
           <li key={navlink.label} className="mb-2">
-            <Link href={navlink.href}>{navlink.label}</Link>
+            <Link href={navlink.href} title={navlink.label}>{navlink.label}</Link>
           </li>
         ))}
       </ul>

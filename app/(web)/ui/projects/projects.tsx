@@ -25,6 +25,7 @@ export default function Projects({ selectedProjects }: IProjectsProps) {
         <Link
           href="/projects"
           className="btn btn-primary text-center w-full max-w-32"
+          rel="nofollow"
         >
           All Projects
         </Link>

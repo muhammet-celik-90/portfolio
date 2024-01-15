@@ -10,7 +10,7 @@ export default function NavLargeMenu(props: INavLargeMenuProps) {
       <ul className="menu menu-horizontal px-1">
         {navlinks.map((navlink) => (
           <li key={navlink.label}>
-            <Link href={navlink.href}>{navlink.label}</Link>
+            <Link href={navlink.href} title={navlink.label}>{navlink.label}</Link>
           </li>
         ))}
       </ul>
