@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: `%s | ${sharedMetadata.title}`,
     default: sharedMetadata.title, // a default is required when creating a template
   },
-  //metadataBase: new URL(sharedMetadata.baseURL),
+  metadataBase: new URL(sharedMetadata.baseURL),
   robots: sharedMetadata.robots,
   authors: {name: sharedMetadata.author},
   description: sharedMetadata.description,
