@@ -23,4 +23,10 @@ export const certificates = [
         image: '/certificates/images/meta.webp',
         href: '/certificates/pdfs/version-control.pdf'
     },
+    {
+        label: 'Meta',
+        description: 'Programming with JavaScript',
+        image: '/certificates/images/meta.webp',
+        href: '/certificates/pdfs/js.pdf'
+    },
 ]
